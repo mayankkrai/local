@@ -8,7 +8,6 @@ import { Routing } from './routing.module';
 import {FormsModule} from '@angular/forms';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { RouterModule } from '@angular/router';
-import { HostScreen } from './hostlistener.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,7 @@ import { HostScreen } from './hostlistener.service';
     FormsModule,
     RouterModule
   ],
-  providers: [HostScreen],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
