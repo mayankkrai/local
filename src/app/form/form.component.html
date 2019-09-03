@@ -1,0 +1,25 @@
+<div class="container">
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        
+        <div class="col-xs-12">
+
+            <div class="row">
+                <div class="col-xs-2 " >
+                        <div class="row form-group">
+                    <label for="name">work Name</label>
+                </div>
+            </div>
+           
+                <div class="col-xs-7 ">
+                        <div class="row">
+                    <input type="text" id="name" class="form-control"
+                    ngModel
+                    name="workName"
+                    #name="ngModel">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
